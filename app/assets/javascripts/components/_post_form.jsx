@@ -24,7 +24,7 @@ class PostForm extends React.Component {
         <input
           type="text"
           name="post[title]"
-          value={this.state.title}
+          value={this.state.title || ''}
           onChange={this.handleTitleChange}
         />
 
@@ -32,7 +32,7 @@ class PostForm extends React.Component {
         <input
           type="text"
           name="post[content]"
-          value={this.state.content}
+          value={this.state.content || ''}
           onChange={this.handleContentChange}
         />
 
